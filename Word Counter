@@ -1,0 +1,16 @@
+def count_words(text):
+    words = text.split()
+    return len(words)
+
+# Prompting the user to enter a sentence or paragraph
+user_input = input("Please enter a sentence or paragraph: ")
+
+# Checking if the input is not empty
+if user_input.strip():  # strip() removes any leading/trailing whitespace
+    # Counting the words in the input
+    word_count = count_words(user_input)
+    # Displaying the word count to the user
+    print(f"Word count: {word_count}")
+else:
+    # Handling empty input
+    print("No input provided!")
